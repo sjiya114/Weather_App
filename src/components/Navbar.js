@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from "react-router-dom"
 export default function Navbar() {
   return (
     <>
@@ -10,10 +11,10 @@ export default function Navbar() {
             </div>
             <div className="sm:ml-2 sm:block">
               <div className="flex space-x-4">
-                <a href="/" className=" active rounded-md bg-gray-900 px-3 py-2 text-lg font-medium text-white" aria-current="page"  >Home</a>
-                <a href="/About" className="rounded-md px-3 py-2 text-lg font-medium text-gray-300 hover:bg-gray-700 hover:text-white" >About</a>
-                <a href="/hourly" className="rounded-md px-3 py-2 text-lg font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Hourly</a>
-                <a href="/tendays" className="rounded-md px-3 py-2 text-lg font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Fifteen Days</a>
+                <Link to="/" className=" active rounded-md bg-gray-900 px-3 py-2 text-lg font-medium text-white" aria-current="page"  >Home</Link>
+                <Link to="/About" className="rounded-md px-3 py-2 text-lg font-medium text-gray-300 hover:bg-gray-700 hover:text-white" >About</Link>
+                <Link to="/hourly" className="rounded-md px-3 py-2 text-lg font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Hourly</Link>
+                <Link to="/tendays" className="rounded-md px-3 py-2 text-lg font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Fifteen Days</Link>
               </div>
             </div>
             </div>

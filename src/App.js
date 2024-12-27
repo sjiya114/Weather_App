@@ -3,9 +3,9 @@ import Education from './components/Home';
 import Navbar from './components/Navbar';
 import React,{useState,useEffect} from 'react';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
-  Route
+  Route,
 } from "react-router-dom";
 import TenDay from './components/TenDay';
 import About from './components/About';
