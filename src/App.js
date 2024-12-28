@@ -49,7 +49,7 @@ function App() {
     <>
       <Router>
         <Navbar/>
-        <div className=" md:ml-[480px] mt-[50px]  sm:ml-4 ">
+        <div className=" md:ml-[480px]  sm:mt-[50px]  sm:ml-4 ">
         <input type='text' className="h-9 rounded-md w-60 px-3 bg-pink-100 text-black"     placeholder='Enter name of place' onChange={handleCityChange} />
         <button className="bg-green-950 text-white rounded-md w-20 h-9 " onClick={fetchWeather} >Search</button>
         </div>

@@ -7,7 +7,7 @@ export default function Education(props) {
       {loading && <Loading/>}
       {error && <p>error</p>}
       {!loading && !error && data && (
-        <div className="h-80  md:mx-[450px] my-14 sm:mx-2  bg-blue-900 text-white w-96 px-4 py-4 rounded-lg hover:bg-blue-800 ">
+        <div className="h-80  md:mx-[450px] my-14 sm:mx-2  bg-blue-900 text-white md:w-96 px-4 py-4 rounded-lg hover:bg-blue-800 sm:w-60 ">
             <h1>{data.resolvedAddress}</h1>
             <h6 >{data.timezone}</h6>
             <h6>{data.description}</h6>

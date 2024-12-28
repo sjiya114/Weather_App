@@ -3,12 +3,12 @@ export default function About() {
     return (
         <>
             <section className="py-24 relative text-black backdrop-blur-md ">
-                <div className="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-[150px]">
+                <div className="w-full max-w-7xl px-4 md:px-5 lg:px-5 md:mx-[150px] sm:mx-3">
                     <div className="w-full justify-start items-center gap-8 grid lg:grid-cols-2 grid-cols-1">
                         <div className="w-full flex-col justify-start lg:items-start items-center gap-10 inline-flex">
                             <div className="w-full flex-col justify-start lg:items-start items-center gap-4 flex">
                                 <h1 className="text-gray-900 text-4xl font-bold font-manrope leading-normal lg:text-start text-center">Weather App</h1>
-                                <p className="text-black  text-2xl font-normal leading-relaxed lg:text-start text-center">Stay informed with real-time weather updates for multiple locations around the world. Whether you're planning your day or preparing for the future,this site provides:
+                                <p className="text-gray-800  md:text-2xl sm:text-sm lg:text-start text-center "  style={{fontFamily:'cursive'}}>Stay informed with real-time weather updates for multiple locations around the world. Whether you're planning your day or preparing for the future,this site provides:
                                     Multiple Locations: View the weather for any number of cities at once.
                                     Hourly Forecast: Get accurate, detailed hourly weather predictions for the entire day.
                                     15-Day Forecast: Plan ahead with reliable weather predictions for the next two weeks.

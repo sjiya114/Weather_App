@@ -8,10 +8,10 @@ export default function TenDay(props) {
           {error && <p>error</p>}
         <div  >
         {data && (
-        <div className="md:mx-60 my-10  sm:ml-[100px] ">{
+        <div className="md:mx-60 my-10 sm:ml-40">{
         data.days.map((element, i) =>
         (
-            <div className="flex mx-4 my-4 float-left space-x-6 "  key={i}>
+            <div className="flex mx-4 my-4 float-left space-x-6"  key={i}>
                 <div className="bg-blue-900 text-white w-[240px] h-[140px] px-4 py-5 rounded-md">
                 <img className="w-16 h-16 float-right mr-2" src= {`https://github.com/visualcrossing/WeatherIcons/blob/main/PNG/1st%20Set%20-%20Color/${element.icon}.png?raw=true`} alt=''/>
                 <h5>Date:{element.datetime}</h5>

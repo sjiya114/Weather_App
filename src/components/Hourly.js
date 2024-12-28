@@ -6,7 +6,7 @@ export default function Hourly(props) {
       <>
      {loading && <Loading/>}
       {error && <p>error</p>}  
-<div  className="mx-4 backdrop-blur-md    grid float-left my-12   md:grid-cols-5   sm:grid-cols-2" style={{gap: '80px' }}>
+<div className="mx-8 backdrop-blur-md    grid float-left my-12    md:grid-cols-5   sm:grid-cols-2" style={{gap: '80px' }}>
 {!loading && data && (
   data.days[0].hours.map((element, i) =>
   (
