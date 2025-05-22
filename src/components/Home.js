@@ -1,9 +1,16 @@
 import React  from 'react';
 import Loading from './Loading';
 export default function Education(props) {
-  let {data,loading,error}=props;
+  let {data,loading,error,handleCityChange,fetchWeather}=props;
   return (
     <>
+         <div className='h-10'>
+ 
+          </div>
+         <div className=" md:ml-[480px]  sm:mt-[100px]  sm:ml-4 ">
+          <input type='text' className="h-9 rounded-md w-60 px-3 bg-pink-100 text-black" placeholder='Enter name of place' onChange={handleCityChange} />
+          <button className="bg-green-950 text-white rounded-md w-20 h-9 " onClick={fetchWeather} >Search</button>
+        </div>
       {loading && <Loading/>}
       {error && <p>error</p>}
       {!loading && !error && data && (
